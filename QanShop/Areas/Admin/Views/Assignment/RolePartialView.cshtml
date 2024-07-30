@@ -1,0 +1,43 @@
+﻿<!--Product Modal -->
+<div class="modal fade" id="roleModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="roleModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="roleLabel">Thông Tin Quyền Hạn</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between gap-3">
+                    <input type="text" id="roleId" value="" hidden />
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="roleName" class="col-form-label">Tên Quyền Hạn</label>
+                            <input type="text" class="form-control" id="roleName" value="" placeholder="">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="roleDescription" class="col-form-label">Mô Tả</label>
+                            <input type="text" class="form-control" id="roleDescription" value="" placeholder="">
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="roleIsActive" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Kích Hoạt
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>                
+                    
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button id="submit" type="button" class="btn btn-primary" onclick="RoleModalBtn()">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
